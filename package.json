@@ -1,0 +1,16 @@
+{
+  "name": "brasaland-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo de Brasaland Digital (AI Engineering, 4Geeks Academy)",
+  "scripts": {
+    "web:css": "npx @tailwindcss/cli -i uis/website/src/input.css -o uis/website/styles.css --minify",
+    "web:css:watch": "npx @tailwindcss/cli -i uis/website/src/input.css -o uis/website/styles.css --watch",
+    "web:serve": "npx http-server uis/website -p 3000 -a 0.0.0.0 -c-1"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "http-server": "^14.1.0",
+    "tailwindcss": "^4.1.0"
+  }
+}
